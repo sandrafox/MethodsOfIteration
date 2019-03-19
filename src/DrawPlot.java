@@ -26,7 +26,7 @@ public class DrawPlot extends ApplicationFrame {
                 chartTitle ,
                 "Steps" ,
                 "Fitness" ,
-                createDataset() ,
+                createDataset1() ,
                 PlotOrientation.VERTICAL ,
                 true , true , false);
 
@@ -41,7 +41,7 @@ public class DrawPlot extends ApplicationFrame {
         setContentPane( chartPanel );
     }
 
-    public static XYDataset createDataset() throws IOException {
+    public static XYDataset createDataset1() throws IOException {
         final XYSeries mutation = new XYSeries( "RLS" );
         BufferedReader reader = Files.newBufferedReader(Paths.get("text.txt"));
         String line;
@@ -54,19 +54,106 @@ public class DrawPlot extends ApplicationFrame {
         return dataset;
     }
 
+    public static XYDataset createDataset2() throws IOException {
+        final XYSeries mutation = new XYSeries( "RLS" );
+        BufferedReader reader = Files.newBufferedReader(Paths.get("solve1.txt"));
+        String line;
+        while ((line = reader.readLine()) != null) {
+            String[] nums = line.split(" ");
+            mutation.add(Integer.parseInt(nums[0]), Double.parseDouble(nums[1]));
+        }
+        final XYSeriesCollection dataset = new XYSeriesCollection( );
+        dataset.addSeries( mutation );
+        return dataset;
+    }
+
+    public static XYDataset createDataset3() throws IOException {
+        final XYSeries mutation = new XYSeries( "RLS" );
+        BufferedReader reader = Files.newBufferedReader(Paths.get("solve2.txt"));
+        String line;
+        while ((line = reader.readLine()) != null) {
+            String[] nums = line.split(" ");
+            mutation.add(Integer.parseInt(nums[0]), Double.parseDouble(nums[1]));
+        }
+        final XYSeriesCollection dataset = new XYSeriesCollection( );
+        dataset.addSeries( mutation );
+        return dataset;
+    }
+
+    public static XYDataset createDataset4() throws IOException {
+        final XYSeries mutation = new XYSeries( "RLS" );
+        BufferedReader reader = Files.newBufferedReader(Paths.get("solve3.txt"));
+        String line;
+        while ((line = reader.readLine()) != null) {
+            String[] nums = line.split(" ");
+            mutation.add(Integer.parseInt(nums[0]), Double.parseDouble(nums[1]));
+        }
+        final XYSeriesCollection dataset = new XYSeriesCollection( );
+        dataset.addSeries( mutation );
+        return dataset;
+    }
+
     public static void main( String[ ] args ) {
         try {
             JFreeChart xylineChart = ChartFactory.createXYLineChart(
                     "Iterations",
                     "r",
                     "x",
-                    DrawPlot.createDataset(),
+                    DrawPlot.createDataset1(),
                     PlotOrientation.VERTICAL,
                     true, true, false);
 
             int width = 1000;   /* Width of the image */
             int height = 800;  /* Height of the image */
             File XYChart = new File( "Iterations.jpeg" );
+            ChartUtilities.saveChartAsJPEG( XYChart, xylineChart, width, height);
+        } catch (IOException e) {
+            System.out.println(e.getMessage());
+        }
+        try {
+            JFreeChart xylineChart = ChartFactory.createXYLineChart(
+                    "Iterations",
+                    "r",
+                    "x",
+                    DrawPlot.createDataset2(),
+                    PlotOrientation.VERTICAL,
+                    true, true, false);
+
+            int width = 1000;   /* Width of the image */
+            int height = 800;  /* Height of the image */
+            File XYChart = new File( "Iteration0.jpeg" );
+            ChartUtilities.saveChartAsJPEG( XYChart, xylineChart, width, height);
+        } catch (IOException e) {
+            System.out.println(e.getMessage());
+        }
+        try {
+            JFreeChart xylineChart = ChartFactory.createXYLineChart(
+                    "Iterations",
+                    "r",
+                    "x",
+                    DrawPlot.createDataset3(),
+                    PlotOrientation.VERTICAL,
+                    true, true, false);
+
+            int width = 1000;   /* Width of the image */
+            int height = 800;  /* Height of the image */
+            File XYChart = new File( "IterationsMono.jpeg" );
+            ChartUtilities.saveChartAsJPEG( XYChart, xylineChart, width, height);
+        } catch (IOException e) {
+            System.out.println(e.getMessage());
+        }
+        try {
+            JFreeChart xylineChart = ChartFactory.createXYLineChart(
+                    "Iterations",
+                    "r",
+                    "x",
+                    DrawPlot.createDataset4(),
+                    PlotOrientation.VERTICAL,
+                    true, true, false);
+
+            int width = 1000;   /* Width of the image */
+            int height = 800;  /* Height of the image */
+            File XYChart = new File( "IterationsCol.jpeg" );
             ChartUtilities.saveChartAsJPEG( XYChart, xylineChart, width, height);
         } catch (IOException e) {
             System.out.println(e.getMessage());

@@ -12,19 +12,21 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="DrawPlot.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/DrawPlot.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="165">
-              <caret line="49" column="0" lean-forward="false" selection-start-line="49" selection-start-column="0" selection-end-line="49" selection-end-column="0" />
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
-            </state>
+      <file leaf-file-name="Iteration0.jpeg" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/Iteration0.jpeg">
+          <provider selected="true" editor-type-id="images">
+            <state />
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="Iterations.jpeg" pinned="false" current-in-tab="true">
+      <file leaf-file-name="IterationsCol.jpeg" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/IterationsCol.jpeg">
+          <provider selected="true" editor-type-id="images">
+            <state />
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="Iterations.jpeg" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/Iterations.jpeg">
           <provider selected="true" editor-type-id="images">
             <state />
@@ -37,23 +39,23 @@
             <state relative-caret-position="-324">
               <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
               <folding>
-                <marker date="1553014942787" expanded="true" signature="30119:30364" ph="..." />
-                <marker date="1553014942787" expanded="true" signature="30119:30379" ph="..." />
-                <marker date="1553014942787" expanded="true" signature="30119:31051" ph="..." />
-                <marker date="1553014942787" expanded="true" signature="30119:31066" ph="..." />
-                <marker date="1553014942787" expanded="true" signature="30166:30344" ph="..." />
-                <marker date="1553014942787" expanded="true" signature="30206:30310" ph="..." />
-                <marker date="1553014942787" expanded="true" signature="30227:30288" ph="..." />
-                <marker date="1553014942787" expanded="true" signature="30414:30720" ph="..." />
-                <marker date="1553014942787" expanded="true" signature="30433:30705" ph="..." />
-                <marker date="1553014942787" expanded="true" signature="30507:30685" ph="..." />
-                <marker date="1553014942787" expanded="true" signature="30547:30651" ph="..." />
-                <marker date="1553014942787" expanded="true" signature="30568:30629" ph="..." />
-                <marker date="1553014942787" expanded="true" signature="30772:31037" ph="..." />
-                <marker date="1553014942787" expanded="true" signature="30791:31022" ph="..." />
-                <marker date="1553014942787" expanded="true" signature="30824:31002" ph="..." />
-                <marker date="1553014942787" expanded="true" signature="30864:30968" ph="..." />
-                <marker date="1553014942787" expanded="true" signature="30885:30946" ph="..." />
+                <marker date="1553017490464" expanded="true" signature="30691:30936" ph="..." />
+                <marker date="1553017490464" expanded="true" signature="30691:30951" ph="..." />
+                <marker date="1553017490464" expanded="true" signature="30691:31623" ph="..." />
+                <marker date="1553017490464" expanded="true" signature="30691:31638" ph="..." />
+                <marker date="1553017490464" expanded="true" signature="30738:30916" ph="..." />
+                <marker date="1553017490464" expanded="true" signature="30778:30882" ph="..." />
+                <marker date="1553017490464" expanded="true" signature="30799:30860" ph="..." />
+                <marker date="1553017490464" expanded="true" signature="30986:31292" ph="..." />
+                <marker date="1553017490464" expanded="true" signature="31005:31277" ph="..." />
+                <marker date="1553017490464" expanded="true" signature="31079:31257" ph="..." />
+                <marker date="1553017490464" expanded="true" signature="31119:31223" ph="..." />
+                <marker date="1553017490464" expanded="true" signature="31140:31201" ph="..." />
+                <marker date="1553017490464" expanded="true" signature="31344:31609" ph="..." />
+                <marker date="1553017490464" expanded="true" signature="31363:31594" ph="..." />
+                <marker date="1553017490464" expanded="true" signature="31396:31574" ph="..." />
+                <marker date="1553017490464" expanded="true" signature="31436:31540" ph="..." />
+                <marker date="1553017490464" expanded="true" signature="31457:31518" ph="..." />
               </folding>
             </state>
           </provider>
@@ -79,6 +81,18 @@
           </provider>
         </entry>
       </file>
+      <file leaf-file-name="DrawPlot.java" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/DrawPlot.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="25">
+              <caret line="52" column="38" lean-forward="true" selection-start-line="52" selection-start-column="38" selection-end-line="52" selection-end-column="38" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
     </leaf>
   </component>
   <component name="FileTemplateManagerImpl">
@@ -90,6 +104,7 @@
   </component>
   <component name="Git.Settings">
     <option name="ROOT_SYNC" value="DONT_SYNC" />
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="GradleLocalSettings">
     <option name="externalProjectsViewState">
@@ -99,6 +114,7 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
+        <option value="$PROJECT_DIR$/iteration.py" />
         <option value="$PROJECT_DIR$/src/DrawPlot.java" />
       </list>
     </option>
@@ -353,12 +369,12 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1553009637046</updated>
-      <workItem from="1553009640827" duration="2960000" />
+      <workItem from="1553009640827" duration="4573000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="2960000" />
+    <option name="totallyTimeSpent" value="4573000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-11" y="-11" width="1942" height="1042" extended-state="6" />
@@ -374,7 +390,7 @@
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="true" content_ui="tabs" />
       <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
       <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.3297619" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="false" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
+      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
       <window_info id="Capture Tool" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
       <window_info id="Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
@@ -408,23 +424,23 @@
         <state relative-caret-position="-324">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding>
-            <marker date="1553014942787" expanded="true" signature="30119:30364" ph="..." />
-            <marker date="1553014942787" expanded="true" signature="30119:30379" ph="..." />
-            <marker date="1553014942787" expanded="true" signature="30119:31051" ph="..." />
-            <marker date="1553014942787" expanded="true" signature="30119:31066" ph="..." />
-            <marker date="1553014942787" expanded="true" signature="30166:30344" ph="..." />
-            <marker date="1553014942787" expanded="true" signature="30206:30310" ph="..." />
-            <marker date="1553014942787" expanded="true" signature="30227:30288" ph="..." />
-            <marker date="1553014942787" expanded="true" signature="30414:30720" ph="..." />
-            <marker date="1553014942787" expanded="true" signature="30433:30705" ph="..." />
-            <marker date="1553014942787" expanded="true" signature="30507:30685" ph="..." />
-            <marker date="1553014942787" expanded="true" signature="30547:30651" ph="..." />
-            <marker date="1553014942787" expanded="true" signature="30568:30629" ph="..." />
-            <marker date="1553014942787" expanded="true" signature="30772:31037" ph="..." />
-            <marker date="1553014942787" expanded="true" signature="30791:31022" ph="..." />
-            <marker date="1553014942787" expanded="true" signature="30824:31002" ph="..." />
-            <marker date="1553014942787" expanded="true" signature="30864:30968" ph="..." />
-            <marker date="1553014942787" expanded="true" signature="30885:30946" ph="..." />
+            <marker date="1553017490464" expanded="true" signature="30691:30936" ph="..." />
+            <marker date="1553017490464" expanded="true" signature="30691:30951" ph="..." />
+            <marker date="1553017490464" expanded="true" signature="30691:31623" ph="..." />
+            <marker date="1553017490464" expanded="true" signature="30691:31638" ph="..." />
+            <marker date="1553017490464" expanded="true" signature="30738:30916" ph="..." />
+            <marker date="1553017490464" expanded="true" signature="30778:30882" ph="..." />
+            <marker date="1553017490464" expanded="true" signature="30799:30860" ph="..." />
+            <marker date="1553017490464" expanded="true" signature="30986:31292" ph="..." />
+            <marker date="1553017490464" expanded="true" signature="31005:31277" ph="..." />
+            <marker date="1553017490464" expanded="true" signature="31079:31257" ph="..." />
+            <marker date="1553017490464" expanded="true" signature="31119:31223" ph="..." />
+            <marker date="1553017490464" expanded="true" signature="31140:31201" ph="..." />
+            <marker date="1553017490464" expanded="true" signature="31344:31609" ph="..." />
+            <marker date="1553017490464" expanded="true" signature="31363:31594" ph="..." />
+            <marker date="1553017490464" expanded="true" signature="31396:31574" ph="..." />
+            <marker date="1553017490464" expanded="true" signature="31436:31540" ph="..." />
+            <marker date="1553017490464" expanded="true" signature="31457:31518" ph="..." />
           </folding>
         </state>
       </provider>
@@ -461,19 +477,29 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/Iterations.jpeg">
+      <provider selected="true" editor-type-id="images">
+        <state />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Iteration0.jpeg">
+      <provider selected="true" editor-type-id="images">
+        <state />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/IterationsCol.jpeg">
+      <provider selected="true" editor-type-id="images">
+        <state />
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/DrawPlot.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="165">
-          <caret line="49" column="0" lean-forward="false" selection-start-line="49" selection-start-column="0" selection-end-line="49" selection-end-column="0" />
+        <state relative-caret-position="25">
+          <caret line="52" column="38" lean-forward="true" selection-start-line="52" selection-start-column="38" selection-end-line="52" selection-end-column="38" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
         </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Iterations.jpeg">
-      <provider selected="true" editor-type-id="images">
-        <state />
       </provider>
     </entry>
   </component>
