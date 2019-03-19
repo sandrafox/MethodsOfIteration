@@ -45,18 +45,37 @@ def findsolve2(r):
 def findsolve(r):
     x0 = 0.5
     x1 = r * x0 * (1 - x0)
+    delta = abs(x0 - x1)
     while abs(x1 - x0) > 0.00000000001:
         x0 = x1
         x1 = r * x0 * (1 - x0)
+        delta1 = abs(x0 -x1)
+        if not(delta1 < delta):
+            return -1
+        delta = delta1
     return x1
 
-#f = open('text.txt', 'w')
-#for x in [x / 100000.0 for x in range(0, 300000)]:
-    #if x == 0:
-     #   continue
-    #f.write("%f %.5f\n" %(x, findsolve(x)))
-    #print("solve2 for %f = %f" %(x, findsolve2(x)))
-    #print("\n")
+def findBif(r):
+    x0 = 0.5
+    x1 = r * x0 * (1 - x0)
+    delta = abs(x0 - x1)
+    while abs(x1 - x0) > 0.00000000001:
+        x0 = x1
+        x1 = r * x0 * (1 - x0)
+        delta1 = abs(x0 - x1)
+        if not (delta1 < delta):
+            return x0, x1
+        delta = delta1
+    return -1, x0
+
+
+# f = open('text.txt', 'w')
+# for x in [x / 100000.0 for x in range(300001, 350000)]:
+#     #if x == 0:
+#      #   continue
+#     f.write("%f %.5f\n" %(x, findsolve(x)))
+#     #print("solve2 for %f = %f" %(x, findsolve2(x)))
+#     #print("\n")
 
 # r = 0.1
 # i = 0
@@ -104,15 +123,35 @@ def findsolve(r):
 #     i += 1
 
 
-left = 1.0
-right = 3.0
-while abs(left - right) > 0.00000000001:
-    mid = (left + right) / 2
-    x = findsolve(mid)
-    x0 = 0.5
-    x1 = mid * x0 * (1 - x0)
-    if (x - x0) * (x - x1) < 0:
-        right = mid
+# left = 1.0
+# right = 3.0
+# while abs(left - right) > 0.00000000001:
+#     mid = (left + right) / 2
+#     x = findsolve(mid)
+#     x0 = 0.5
+#     x1 = mid * x0 * (1 - x0)
+#     if (x - x0) * (x - x1) < 0:
+#         right = mid
+#     else:
+#         left = mid
+# print(left)
+
+# left = 2.1
+# right = 3.5
+# while abs(left - right) > 0.00000000001:
+#     mid = (left + right) / 2
+#     x = findsolve(mid)
+#     if x == -1:
+#         right = mid
+#     else:
+#         left = mid
+# print(left)
+
+f = open("solve4.txt", "w")
+for x in [x / 100000.0 for x in range(300001, 320000)]:
+    x0, x1 = findBif(x)
+    f.write("%f " %x)
+    if x0 < x1:
+        f.write("%f %f\n" %(x0, x1))
     else:
-        left = mid
-print(left)
+        f.write("%f %f\n" %(x1, x0))

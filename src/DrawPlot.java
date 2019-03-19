@@ -93,70 +93,102 @@ public class DrawPlot extends ApplicationFrame {
         return dataset;
     }
 
+    public static XYDataset createDataset5() throws IOException {
+        final XYSeries mutation = new XYSeries( "first" );
+        final XYSeries crossover = new XYSeries("second");
+        BufferedReader reader = Files.newBufferedReader(Paths.get("solve4.txt"));
+        String line;
+        while ((line = reader.readLine()) != null) {
+            String[] nums = line.split(" ");
+            mutation.add(Double.parseDouble(nums[0]), Double.parseDouble(nums[1]));
+            crossover.add(Double.parseDouble(nums[0]), Double.parseDouble(nums[2]));
+        }
+        final XYSeriesCollection dataset = new XYSeriesCollection( );
+        dataset.addSeries( mutation );
+        dataset.addSeries(crossover);
+        return dataset;
+    }
+
     public static void main( String[ ] args ) {
+//        try {
+//            JFreeChart xylineChart = ChartFactory.createXYLineChart(
+//                    "Iterations",
+//                    "r",
+//                    "x",
+//                    DrawPlot.createDataset1(),
+//                    PlotOrientation.VERTICAL,
+//                    true, true, false);
+//
+//            int width = 1000;   /* Width of the image */
+//            int height = 800;  /* Height of the image */
+//            File XYChart = new File( "Iterations.jpeg" );
+//            ChartUtilities.saveChartAsJPEG( XYChart, xylineChart, width, height);
+//        } catch (IOException e) {
+//            System.out.println(e.getMessage());
+//        }
+//        try {
+//            JFreeChart xylineChart = ChartFactory.createXYLineChart(
+//                    "Iterations",
+//                    "r",
+//                    "x",
+//                    DrawPlot.createDataset2(),
+//                    PlotOrientation.VERTICAL,
+//                    true, true, false);
+//
+//            int width = 1000;   /* Width of the image */
+//            int height = 800;  /* Height of the image */
+//            File XYChart = new File( "Iteration0.jpeg" );
+//            ChartUtilities.saveChartAsJPEG( XYChart, xylineChart, width, height);
+//        } catch (IOException e) {
+//            System.out.println(e.getMessage());
+//        }
+//        try {
+//            JFreeChart xylineChart = ChartFactory.createXYLineChart(
+//                    "Iterations",
+//                    "r",
+//                    "x",
+//                    DrawPlot.createDataset3(),
+//                    PlotOrientation.VERTICAL,
+//                    true, true, false);
+//
+//            int width = 1000;   /* Width of the image */
+//            int height = 800;  /* Height of the image */
+//            File XYChart = new File( "IterationsMono.jpeg" );
+//            ChartUtilities.saveChartAsJPEG( XYChart, xylineChart, width, height);
+//        } catch (IOException e) {
+//            System.out.println(e.getMessage());
+//        }
         try {
             JFreeChart xylineChart = ChartFactory.createXYLineChart(
                     "Iterations",
                     "r",
                     "x",
-                    DrawPlot.createDataset1(),
+                    DrawPlot.createDataset5(),
                     PlotOrientation.VERTICAL,
                     true, true, false);
 
             int width = 1000;   /* Width of the image */
             int height = 800;  /* Height of the image */
-            File XYChart = new File( "Iterations.jpeg" );
+            File XYChart = new File( "Bifurcation.jpeg" );
             ChartUtilities.saveChartAsJPEG( XYChart, xylineChart, width, height);
         } catch (IOException e) {
             System.out.println(e.getMessage());
         }
-        try {
-            JFreeChart xylineChart = ChartFactory.createXYLineChart(
-                    "Iterations",
-                    "r",
-                    "x",
-                    DrawPlot.createDataset2(),
-                    PlotOrientation.VERTICAL,
-                    true, true, false);
-
-            int width = 1000;   /* Width of the image */
-            int height = 800;  /* Height of the image */
-            File XYChart = new File( "Iteration0.jpeg" );
-            ChartUtilities.saveChartAsJPEG( XYChart, xylineChart, width, height);
-        } catch (IOException e) {
-            System.out.println(e.getMessage());
-        }
-        try {
-            JFreeChart xylineChart = ChartFactory.createXYLineChart(
-                    "Iterations",
-                    "r",
-                    "x",
-                    DrawPlot.createDataset3(),
-                    PlotOrientation.VERTICAL,
-                    true, true, false);
-
-            int width = 1000;   /* Width of the image */
-            int height = 800;  /* Height of the image */
-            File XYChart = new File( "IterationsMono.jpeg" );
-            ChartUtilities.saveChartAsJPEG( XYChart, xylineChart, width, height);
-        } catch (IOException e) {
-            System.out.println(e.getMessage());
-        }
-        try {
-            JFreeChart xylineChart = ChartFactory.createXYLineChart(
-                    "Iterations",
-                    "r",
-                    "x",
-                    DrawPlot.createDataset4(),
-                    PlotOrientation.VERTICAL,
-                    true, true, false);
-
-            int width = 1000;   /* Width of the image */
-            int height = 800;  /* Height of the image */
-            File XYChart = new File( "IterationsCol.jpeg" );
-            ChartUtilities.saveChartAsJPEG( XYChart, xylineChart, width, height);
-        } catch (IOException e) {
-            System.out.println(e.getMessage());
-        }
+//        try {
+//            JFreeChart xylineChart = ChartFactory.createXYLineChart(
+//                    "Iterations",
+//                    "r",
+//                    "x",
+//                    DrawPlot.createDataset4(),
+//                    PlotOrientation.VERTICAL,
+//                    true, true, false);
+//
+//            int width = 1000;   /* Width of the image */
+//            int height = 800;  /* Height of the image */
+//            File XYChart = new File( "IterationsCol.jpeg" );
+//            ChartUtilities.saveChartAsJPEG( XYChart, xylineChart, width, height);
+//        } catch (IOException e) {
+//            System.out.println(e.getMessage());
+//        }
     }
 }
